@@ -1,0 +1,98 @@
+:root {
+  --primaryColor:#7f1b1d;
+  --secondaryColor: #ffff;
+  --font: 'Benne', serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* nav */
+.navLogo {
+  width: 100px;
+  height: auto;
+}
+
+.nav li:hover  {
+  border-radius: 8px;
+ background-color: var(--primaryColor);
+}
+
+/* footer */
+.containerFooter{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgFooter{
+  width: 40px;
+  height: auto;
+}
+
+.containerFooter i {
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+}
+
+.containerFooter i:hover {
+  color: var(--primaryColor);
+}
+
+.imgShooter{
+ background-image: url("../assets/img/hunt-showdown.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.imgLogo{
+  width: 100px;
+  height: 100px;
+}
+
+.containerImg{
+  text-align: center;
+  font-family: var(--font);
+}
+
+.containerImg h1 {
+  font-weight: bold;
+}
+
+.containerImg p {
+  font-size: 1.2rem;
+}
+
+.line{
+  width: 300px;
+  border-top: 2px solid var(--primaryColor);
+  display: inline-block;
+}
+
+.written{  
+  width: 400px;
+}
+
+.awardIcon {
+  width: 100px;
+  height: auto;
+  transition: all ease .7s;
+}
+
+.awardIcon:hover {
+  transform: scale(1.5);
+}
+
+.containerVideo {
+  width: 50rem ;
+}
+
+@media screen and (max-width: 575px){
+  .written{  
+    width: 300px;
+  }
+}
